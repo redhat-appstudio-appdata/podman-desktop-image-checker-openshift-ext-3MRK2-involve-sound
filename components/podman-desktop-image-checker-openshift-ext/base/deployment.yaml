@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: podman-desktop-image-checker-openshift-ext
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/phmartin-tenant/podman-desktop-image-checker-openshift-ext/podman-desktop-image-checker-openshift-ext@sha256:97bde69f2ed8e049131aac43c63a995e136fcea717ce6d4536d15f83bc448e81
         imagePullPolicy: Always
         name: container-image
         ports:
