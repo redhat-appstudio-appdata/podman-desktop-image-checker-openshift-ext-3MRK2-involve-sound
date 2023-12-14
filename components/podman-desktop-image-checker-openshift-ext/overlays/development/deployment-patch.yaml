@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: podman-desktop-image-checker-openshift-ext
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/phmartin-tenant/podman-desktop-image-checker-openshift-ext/podman-desktop-image-checker-openshift-ext@sha256:97bde69f2ed8e049131aac43c63a995e136fcea717ce6d4536d15f83bc448e81
+        name: container-image
+        resources: {}
+status: {}
